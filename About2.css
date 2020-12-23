@@ -1,0 +1,216 @@
+*{
+   margin: 0; 
+   padding: 0;
+}
+html,
+body {
+  position: relative;
+  height: 70%;
+}
+
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  #one{
+    background-image: url(sneakrs1.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #two{
+    background-image: url(sneakers2.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #three{
+background-image: url(sneakers3.jpg);
+/* overflow: hidden; */
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  #four{
+    background-image: url(sneakers4.jpg);
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* #five{
+    background-image: url(sneakers5.jpg);
+    /* overflow: hidden; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+  } */ 
+  #six{
+    background-image: url(sneakers6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* #seven{
+    background-image: url(sneakers7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  /* #eight{
+    background-image: url(sneakers8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  #nine{
+    background-image: url(sneakers9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #ten{
+    background-image: url(sneakers10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* cards */
+  #row1 .card{
+     margin: 20px;
+    
+  }
+  #row2 .card{
+    margin: 20px; 
+ }
+ #row3 .card{
+  margin: 20px; 
+}
+#row4 .card{
+  margin: 20px; 
+ 
+}
+
+
+ 
+.card:hover{
+    transition:all 0.5s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+ 
+.service-section{
+  /* background-color: red; */
+  display: flex;
+  padding: 30px 120px;
+}
+ /* care end */
+/* footer */
+ .footer {
+  display: flex;
+  justify-content: space-between;
+/* margin-top: 180px; */
+  background-color: rgb(59, 56, 56);
+  padding: 30px;
+  position: sticky;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* navbar */
+
+#home{
+color: red;
+font-size: 1.2rem;
+font-weight: 700;
+}
+#about{
+color: white;
+font-size: 1.2rem;
+font-weight: 700;
+}
+#services{
+color: white;
+font-size: 1.2rem;
+font-weight: 700;
+}
+#contact{
+color: white;
+font-size: 1.2rem;
+font-weight: 700;
+}
+.btn{
+  /* margin: 0px 4px; */
+  color: honeydew;
+  background-color: black;
+  /* font-size: 8px; */
+  /* padding:4px 6px ; */
+  border: 4px solid grey;
+  border-radius: 8px;
+   cursor: pointer;
+   font-weight: bold;
+}
+.btn:hover{
+  background-color:rgb(240, 12, 12);
+  border: 4px solid grey;
+  transition:all 0.5s ease-in-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+} 
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.cancelbtn{
+background-color: red;
+padding: 10px 30px;
+color: white;
+font-family: sans-serif;
+font-weight: bold;
+font: 50px;
+border: none;
+border-radius: 6px;
+} 
+.contain {
+  background-color:#f1f1f1;
+  padding: 15px;
+}
+/* Avatar image */
+.imgcontainer{
+  padding-left: 30%;
+}
+img.avatar {
+width: 50%;
+border-radius: 50%;
+}  

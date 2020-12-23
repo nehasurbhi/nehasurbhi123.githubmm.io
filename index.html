@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="About2.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <img src="shoes.jpg" alt="logo" height="60px" width="60px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="about">About Us</a>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link" href="#" id="services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" id="contact">Contact Us</a>
+                </li>
+            </ul>
+        
+            <div class="button">
+                <form class="form-inline my-2 my-lg-0">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        LOG IN
+                    </button>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter1">
+                        SIGN UP
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">WELCOME</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="imgcontainer">
+                        <img src="userlogo.png" alt="user" class="avatar">
+                    </div>
+                    <form I action="message.html">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Username" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your Username with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password" required>
+                        </div>
+                        <!-- <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+
+                        <div class="contain">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" onclick="validate()">Sign In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">WELCOME</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please fill in this form to create an account.</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <!-- <label for="exampleInputEmail1">Username</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your Username with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <!-- <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        </div>
+                        <div class="form-check">
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label>
+                        </div>
+                        <!-- <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                Privacy</a>.</p>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="one">scene</div>
+            <div class="swiper-slide" id="two">Slide 2</div>
+            <div class="swiper-slide" id="three">Slide 3</div>
+            <div class="swiper-slide" id="four">Slide 4</div>
+            <div class="swiper-slide" id="six">Slide 6</div>
+            <div class="swiper-slide" id="nine">Slide 9</div>
+            <div class="swiper-slide" id="ten">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    </div>
+ <div class="service-section">
+    <div id="row1">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes8.jpg" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <p class="card-text"> Filla Girls Sneakers white and Blue. Trending Sneakers for Girls Casual Shoes </p>
+                <h3>₹599</h3>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes3.jpg" alt="Card image cap"  height="300px">
+            <div class="card-body">
+                <p class="card-text">Powerpuff girls custom sneakers|sneakrs fashion comfy and stylish sneakers for girls.</p>
+                <h3>₹699</h3>
+            </div>
+        </div>
+    </div>
+        <div id="row2">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes9.jpg" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <p class="card-text">Fashion Girls Boots Ankle solod Kids Winter Martin Boots For Girls Warm Children Boots enfant fille brown</p>
+                <h3>₹459</h3>
+            </div>
+        </div>
+    
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes10.jpg" alt="Card image cap"  height="300px">
+            <div class="card-body">
+                <p class="card-text">New Woman canvas shoes casual Lace-Up cute black and White
+                     color Latest girls shoes collection.</p>
+                     <h3>₹999</h3>
+            </div>
+        </div>
+    </div>
+
+        <div id="row3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes2.jpg" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <p class="card-text">Plus velvet high-top canvas shoes girls shoes warm shoescasual denim Bumian student shoes </p>
+                <h3>₹679</h3>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes5.jpg" alt="Card image cap"  height="300px">
+            <div class="card-body">
+                <p class="card-text">adidas sports shoes for girls shop clothing & shoes online Latest girls shoes collection </p>
+                <h3>₹589</h3>
+            </div>
+        </div>
+        </div>
+
+<div id="row4">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes7.jpg" alt="Card image cap" height="250px">
+            <div class="card-body">
+                <p class="card-text">Girls Shoes|Boots, Sneakers, Slippers & more| Zappos, Latest shoes for girls,H&M Leopard .</p>
+                <h3>₹777</h3>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="shoes1.jpg" alt="Card image cap" height="300px">
+            <div class="card-body">
+                <p class="card-text">Fila Disruptor li 3d Embroider sneakers| Adidas shoes woman sneakers Fashion,women fashion sneakers </p>
+                <h3>₹649</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="copyright-text">
+        &copy;2020 Neha Surbhi
+      </div>
+    <a href="#">Feedback</a>
+    <a href="#">Contact</a>
+    <div class="term">
+       Term&Privacy 
+    </div>
+  
+</div>
+  
+
+
+    <!-- <div class="one">
+        <div class="0ne1">
+            <img src="scene.jpg" alt="img" height="300px" width="300px">
+        </div>
+        <div class="0ne2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias quidem quibusdam reiciendis ea
+                voluptates ut ratione pariatur aspernatur, fuga, sequi temporibus facere ipsum laudantium corrupti.
+                Ipsam ducimus, eum illum maxime assumenda corporis quod vero non deserunt, sunt unde. Totam, culpa
+                molestias! Sapiente nam exercitationem quasi cupiditate ex sint cumque aperiam, quidem quis. Voluptatem
+                animi, autem eligendi rem possimus amet quidem natus?</p>
+        </div>
+    </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<script src="About.js"></script>
+
+</html>
